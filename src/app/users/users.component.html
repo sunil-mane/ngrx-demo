@@ -1,0 +1,17 @@
+<button (click)="exportAsXLSX()">Export Users</button>
+<table style="width:100%">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Website</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+    <td>{{ user.phone }}</td>
+    <td>{{ user.website }}</td>
+  </tr>
+</table>
